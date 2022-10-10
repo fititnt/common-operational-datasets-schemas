@@ -1,0 +1,50 @@
+{
+  "$schema": "https://urn.etica.ai/urn:cod:jsonschema:ab",
+  "@context": "https://urn.etica.ai/urn:cod:jsonld:context:ab:3",
+  "@id": "urn:cod:data:ab:3:mz",
+  "@type": "dcat:Dataset",
+  "data": [
+    {
+      "OBJECTID *": 1,
+      "Shape *": "Polygon",
+      "admin3Name_pt": "7 De Abril",
+      "admin3Pcode": "MZ070901",
+      "admin3RefName": null,
+      "admin3AltName1_pt": null,
+      "admin3AltName2_pt": null,
+      "admin2Name_pt": "Meconta",
+      "admin2Pcode": "MZ0709",
+      "admin1Name_pt": "Nampula",
+      "admin1Pcode": "MZ07",
+      "admin0Name_en": "Mozambique",
+      "admin0Name_pt": "Moçambique",
+      "admin0Pcode": "MZ",
+      "date": "2019-04-02",
+      "validOn": "2019-06-07",
+      "validTo": null,
+      "Shape_Length": 1.095383,
+      "Shape_Area": 0.046486
+    },
+    {
+      "OBJECTID *": 411,
+      "Shape *": "Polygon",
+      "admin3Name_pt": "Zumbu",
+      "admin3Pcode": "MZ101503",
+      "admin3RefName": null,
+      "admin3AltName1_pt": null,
+      "admin3AltName2_pt": null,
+      "admin2Name_pt": "Zumbu",
+      "admin2Pcode": "MZ1015",
+      "admin1Name_pt": "Tete",
+      "admin1Pcode": "MZ10",
+      "admin0Name_en": "Mozambique",
+      "admin0Name_pt": "Moçambique",
+      "admin0Pcode": "MZ",
+      "date": "2019-04-02",
+      "validOn": "2019-06-07",
+      "validTo": null,
+      "Shape_Length": 3.406989,
+      "Shape_Area": 0.413425
+    }
+  ]
+}

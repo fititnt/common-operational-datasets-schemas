@@ -1,0 +1,45 @@
+{
+  "$schema": "https://urn.etica.ai/urn:cod:jsonschema:ab",
+  "@context": "https://urn.etica.ai/urn:cod:jsonld:context:ab:3",
+  "@id": "urn:cod:data:ab:3:mz",
+  "data": [
+    {
+      "#adm3+name+i_pt": "7 De Abril",
+      "#adm3+code": "MZ070901",
+      "#adm3+name+ref": null,
+      "#adm3+name+i_pt+alt1": null,
+      "#adm3+name+i_pt+alt2": null,
+      "#adm2+name+i_pt": "Meconta",
+      "#adm2+code": "MZ0709",
+      "#adm1+name+i_pt": "Nampula",
+      "#adm1+code": "MZ07",
+      "#country+name+i_en": "Mozambique",
+      "#country+name+i_pt": "Moçambique",
+      "#country+code": "MZ",
+      "#date": "2019-04-02",
+      "#date+valid_on": "2019-06-07",
+      "#date+valid_to": null,
+      "#meta+Shape_Length": 1.095383,
+      "#meta+Shape_Area": 0.046486
+    },
+    {
+      "#adm3+name+i_pt": "Zumbu",
+      "#adm3+code": "MZ101503",
+      "#adm3+name+ref": null,
+      "#adm3+name+i_pt+alt1": null,
+      "#adm3+name+i_pt+alt2": null,
+      "#adm2+name+i_pt": "Zumbu",
+      "#adm2+code": "MZ1015",
+      "#adm1+name+i_pt": "Tete",
+      "#adm1+code": "MZ10",
+      "#country+name+i_en": "Mozambique",
+      "#country+name+i_pt": "Moçambique",
+      "#country+code": "MZ",
+      "#date": "2019-04-02",
+      "#date+valid_on": "2019-06-07",
+      "#date+valid_to": null,
+      "#meta+Shape_Length": 3.406989,
+      "#meta+Shape_Area": 0.413425
+    }
+  ]
+}
