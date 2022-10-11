@@ -6,33 +6,16 @@
   "type": "object",
   "unevaluatedProperties": false,
   "properties": {
-    "$id": {
-      "type": "string"
-    },
-    "@id": {
-      "type": "string"
-    },
-    "@type": {
-      "type": "string"
-    },
-    "$schema": {
-      "type": "string"
-    },
-    "@context": {
-      "type": "string"
-    },
-    "data": {
-      "type": "array",
-      "items": {
-        "oneOf": [
-          {
-            "$ref": "#/$defs/cod-ab-hxl"
-          },
-          {
-            "$ref": "#/$defs/cod-ab-plain"
-          }
-        ]
-      }
+    "type": "array",
+    "items": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/cod-ab-hxl"
+        },
+        {
+          "$ref": "#/$defs/cod-ab-plain"
+        }
+      ]
     }
   },
   "required": [
