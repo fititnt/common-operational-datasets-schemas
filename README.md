@@ -53,15 +53,32 @@ and `jq` (see https://stedolan.github.io/jq/):
 csvjson example-input.csv | jq '{data: .}' > example-output.json
 ```
 
+We assume the output to be tested will have already well formated data.
+The csvjson already check some formats (example: "", "na", "n/a", "none", "null", ".")
+but not all.
+So, for example if instead of JSON null (example: `[value: null]`) the file have `<Null>`
+(example: `[value: "<Null>"]`) fix before validation.
+
+Next example uses Unix `sed`
+
+```bash
+sed -i 's/"<Null>"/null/g' example-output.json
+```
+
 ### How to validate
 
 Check <https://json-schema.org/implementations.html#validators> full list.
 The only strong requeriment is a tool compatible with JSON Schema 2022-08-31 or newer.
 
-One example of online tool is <https://json-schema.hyperjump.io/>.
+Two examples of online tool are <https://jschon.dev/> and <https://json-schema.hyperjump.io/>.
 
 One example of command line tool installable with `pip install jsonschema'[format]'` is <https://github.com/python-jsonschema/jsonschema>.
 
+
+<!--
+- https://www.w3.org/TR/activitystreams-core/#naturalLanguageValues
+- https://github.com/json-schema-org/json-schema-spec/issues/53
+-->
 
 <!--
 # https://www.npmjs.com/package/@jbroutier/csv-validator
@@ -73,6 +90,8 @@ csv-validator example/raw/test.temp.csv schema/test.temp.json
 
 # pip install csvkit
 csvjson example/raw/2022_cod-ab-sample_moz_adm3.csv | jq '{data: .}' > example/raw/2022_cod-ab-sample_moz_adm3.csv.temp.json
+
+sed -i 's/"<Null>"/null/g' example/raw/2022_cod-ab-sample_moz_adm3.csv.temp.json
 
 # https://github.com/python-jsonschema/jsonschema
 pip install jsonschema[format]
